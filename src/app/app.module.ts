@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { DetailsScreenComponent } from './components/pages/details-screen/details-screen.component';
 import { BotaoComponent } from './shared/components/botao/botao.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { LocInfoComponent } from './shared/components/loc-info/loc-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     DetailsScreenComponent,
-    BotaoComponent
+    BotaoComponent,
+    CarouselComponent,
+    LocInfoComponent
   ],
   imports: [
     BrowserModule,
