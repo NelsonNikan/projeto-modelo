@@ -1,0 +1,27 @@
+.carousel-container {
+    height: 25rem;
+    width: 17rem;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("../../assets/images/carousel-bg.jpg");
+    background-size: cover;
+    background-position: 50%;
+
+    .favorite-button {
+        background-color: #1d1d1d66;
+        margin: none;
+        border: none;
+        height: 2.75rem;
+        width: 2.75rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(20px);
+        align-self: flex-end;
+        cursor: pointer;
+    }
+}
