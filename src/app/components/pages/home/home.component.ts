@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  public numeroAtual: number = 0;
+
+  public showButtonActivated(){
+    this.numeroAtual ++
+    console.log('botão foi clicadooooo')
+  }
 }

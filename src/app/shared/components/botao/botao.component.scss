@@ -23,6 +23,9 @@ flex-shrink: 0;
 &.variante3{
     background: pink;
 }
+&:active {
+    transform: scale(0.95); /* Diminui o botão quando clicado */
+  }
 }
 
 .text-button{
