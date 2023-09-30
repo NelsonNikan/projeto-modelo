@@ -4,10 +4,10 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { DetailsScreenComponent } from './components/pages/details-screen/details-screen.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent},
   { path: 'home', component: HomeComponent},
   { path: 'datails', component: DetailsScreenComponent},
-  { path: '**', redirectTo: 'home'},
+  { path: '',   redirectTo: '/home', pathMatch: 'full' },
+  { path: '**',  redirectTo: '/home'},
 
 ];
 

@@ -1,4 +1,7 @@
-<button class="text-button plotka " (click)="clickButton()">
-  {{textButton}}  <img src="../../../../assets//icons/send-icon.svg" 
+<div class="center">
+<button class="text-button" (click)="clickButton()">
+  {{textButton}}  
+  <img *ngIf="urlImage" [src]="'../../../../assets/icons/' + urlImage"
   alt="send icon image button">
 </button>
+</div>
