@@ -8,6 +8,7 @@ import { Component, Input, Output, EventEmitter} from '@angular/core';
 export class BotaoComponent {
 
   @Input() textButton: string = '';
+  @Input() imageUrl: boolean | string = false;
   @Output() click = new EventEmitter<any>()
   constructor(){
   }

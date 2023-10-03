@@ -20,11 +20,12 @@ flex-shrink: 0;
 .text-button{
 color: var(--white-color-primary-root);
 text-align: center;
-font-family: Roboto;
+font-family: Roboto, sans-serif;
 font-size: 20px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
+cursor: pointer 
 }
 
 img{
