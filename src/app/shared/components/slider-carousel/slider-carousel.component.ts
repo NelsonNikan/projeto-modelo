@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { imagesInterface } from '../../models/images.interface';
 
 
 @Component({
@@ -8,31 +9,19 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./slider-carousel.component.scss']
 })
 export class SliderCarouselComponent {
+  @Input() images: imagesInterface = {img:[]}
 
-  customOptions: OwlOptions = {
+  isaOptions: OwlOptions = {
+  
     loop: true,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
     lazyLoad: true,
     dots: false,
-    margin: 50,
+    margin: 100,
     navSpeed: 700,
     navText: ['', ''],
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 2,
-      },
-      940: {
-        items: 2,
-      },
-      1200: {
-        items: 3,
-      },
-    },
     nav: false,
   };
 

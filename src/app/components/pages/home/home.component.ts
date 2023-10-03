@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { images } from 'src/assets/img/img';
 
 @Component({
   selector: 'app-home',
@@ -7,10 +8,8 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  public numeroAtual: number = 0;
+  public imgs = images;
 
   public showButtonActivated(){
-    this.numeroAtual ++
-    console.log('botão foi clicadooooo')
   }
 }
