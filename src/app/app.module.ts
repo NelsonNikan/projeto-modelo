@@ -10,14 +10,12 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { LocInfoComponent } from './shared/components/loc-info/loc-info.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { IconComponent } from './icon/icon.component';
-import { BotaoComponent } from './shared/components/botao/botao.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     DetailsScreenComponent,
-    BotaoComponent,
     CarouselComponent,
     LocInfoComponent,
     SearchBarComponent,
