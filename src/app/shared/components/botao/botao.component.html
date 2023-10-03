@@ -1,8 +1,7 @@
-<button class="text-button plotka">
-  {{ textButton }}
-  <img
-    *ngIf="imageUrl"
-    [src]="'../../../../assets/icons/' + imageUrl"
-    alt="send icon image button"
-  />
+<div class="center">
+<button class="text-button">
+  {{textButton}}  
+  <img *ngIf="urlImage" [src]="'../../../../assets/icons/' + urlImage"
+  alt="send icon image button">
 </button>
+</div>

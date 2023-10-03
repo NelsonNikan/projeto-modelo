@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { images } from 'src/assets/img/img';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  public imgs = images;
+
+  public showButtonActivated(){
+  }
 }
