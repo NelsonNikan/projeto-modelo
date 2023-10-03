@@ -8,6 +8,7 @@ import { DetailsScreenComponent } from './components/pages/details-screen/detail
 import { BotaoComponent } from './shared/components/botao/botao.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { LocInfoComponent } from './shared/components/loc-info/loc-info.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LocInfoComponent } from './shared/components/loc-info/loc-info.componen
     DetailsScreenComponent,
     BotaoComponent,
     CarouselComponent,
-    LocInfoComponent
+    LocInfoComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,
