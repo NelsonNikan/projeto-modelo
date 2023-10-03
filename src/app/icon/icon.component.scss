@@ -1,0 +1,32 @@
+.container { 
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+
+    .img-container {
+        background-color: var(--light-grey-color-root);
+        height: fit-content;
+        padding: 0.563rem;
+        border-radius: 0.375rem;
+        display: flex;
+    
+        img {
+
+            filter: 
+            brightness(0)
+            saturate(100%)
+            invert(17%) 
+            sepia(0%) 
+            saturate(61%) 
+            hue-rotate(177deg) 
+            brightness(84%) 
+            contrast(70%);
+
+            height: 1rem;
+            width: 1rem;
+        }
+
+    }
+
+    
+}
