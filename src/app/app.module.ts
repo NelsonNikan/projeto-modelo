@@ -9,6 +9,7 @@ import { BotaoComponent } from './shared/components/botao/botao.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { LocInfoComponent } from './shared/components/loc-info/loc-info.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { IconComponent } from './icon/icon.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     BotaoComponent,
     CarouselComponent,
     LocInfoComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    IconComponent
   ],
   imports: [
     BrowserModule,
