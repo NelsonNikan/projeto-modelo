@@ -5,6 +5,8 @@ import { SliderCarouselComponent } from './components/slider-carousel/slider-car
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { InputComponent } from './components/input/input.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -12,16 +14,19 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
   declarations: [   
     BotaoComponent,
     SliderCarouselComponent,
+    InputComponent,
   ],
   imports: [
     CommonModule,
     BrowserAnimationsModule,
     RouterModule,
     CarouselModule,
+    FormsModule,
   ],
   exports:[
     BotaoComponent,
-    SliderCarouselComponent
+    SliderCarouselComponent,
+    InputComponent
   ]
 })
 export class SharedModule { }
