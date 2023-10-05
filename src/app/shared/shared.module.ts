@@ -5,6 +5,7 @@ import { SliderCarouselComponent } from './components/slider-carousel/slider-car
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { LocInfoComponent } from './components/loc-info/loc-info.component';
 
 
 
@@ -12,6 +13,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
   declarations: [   
     BotaoComponent,
     SliderCarouselComponent,
+    LocInfoComponent
   ],
   imports: [
     CommonModule,

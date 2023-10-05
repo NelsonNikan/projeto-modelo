@@ -1,0 +1,56 @@
+.container {
+    padding: 0.688rem 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    font-family: Roboto, sans-serif;
+    background-color: #1d1d1d66;;
+    backdrop-filter: blur(20px);
+
+    .location {
+        display: flex;
+        
+        h1, h2 {
+            line-height: 1rem;
+            margin: 0;
+            font-size: 1rem;
+        };
+        
+        h1 {
+            color: var(--light-grey-color-root)
+        }
+    
+        h2 {
+            color: var(--white-color-root)
+        }
+    }
+
+    .location-bottom {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            margin: 0;
+            color: var(--light-grey-color-root);
+        }
+
+        .city-container {
+            display: flex;
+            gap: .75rem;
+
+            p {
+                white-space: nowrap;
+            }
+        }
+        
+        .review-container {
+            display: flex;
+            gap: 0.375rem;
+            align-items: center;
+        }
+    }
+}
+
+
+

@@ -2,8 +2,9 @@
     <div class="alinhamento-lateral alinhamento-topo">
         <div class="">
             <owl-carousel-o [options]="isaOptions">
-                <ng-template *ngFor="let img of images.img" carouselSlide>
-                    <img [src]="'../../../assets/img/'+ img" alt=""  >
+                <ng-template *ngFor="let location of images.img" carouselSlide>
+                    <img [src]="'../../../assets/img/'+ location.img" alt="img location infos">
+                    <app-loc-info [cardInfos]="location.cardInfo" ></app-loc-info>
                 </ng-template>
             </owl-carousel-o>
         </div>

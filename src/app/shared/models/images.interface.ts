@@ -1,5 +1,11 @@
+import { infoInterface } from "./card-info.interface";
 
 
 export interface imagesInterface {
-    img: string[]
+    img: [
+    {
+    img:string, 
+    cardInfo: {}
+}
+]
 }
