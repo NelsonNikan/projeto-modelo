@@ -4,15 +4,14 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { DetailsScreenComponent } from './components/pages/details-screen/details-screen.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent},
+  { path: 'everaldo', component: HomeComponent},
   { path: 'datails', component: DetailsScreenComponent},
-  { path: '',   redirectTo: '/home', pathMatch: 'full' },
-  { path: '**',  redirectTo: '/home'},
+  { path: '',   redirectTo: '/everaldo', pathMatch: 'full' },
 
 ];
 
 @NgModule({   
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule { }
