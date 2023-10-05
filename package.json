@@ -4,10 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --watch --configuration production --aot=true --build-optimizer=true",
+    "build": "ng build --watch --configuration production --aot=true --build-optimizer=true --output-hashing=none",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "http-server": "http-server --watch ./docs",
+    "http-server": "http-server --watch./docs",
     "compodoc:build": "compodoc -p tsconfig.doc.json",
     "compodoc:build-and-serve": "compodoc -p tsconfig.doc.json -s",
     "compodoc:serve": "compodoc -s"

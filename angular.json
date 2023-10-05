@@ -26,8 +26,11 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              {
+                "glob": "**/*",
+                "input": "src/assets/**",
+                "output": "assets"
+              }
             ],
             "styles": [
               "src/styles.scss"
@@ -57,6 +60,13 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true,
+              "assets": [
+                {
+                  "glob": "**/*",
+                  "input": "src/assets/**",
+                  "output": "assets"
+                }
+              ],
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
