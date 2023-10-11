@@ -1,12 +1,11 @@
 <section>
-    <div class="alinhamento-lateral alinhamento-topo">
-        <div class="">
-            <owl-carousel-o [options]="isaOptions">
-                <ng-template *ngFor="let location of images.img" carouselSlide>
-                    <img [src]="'./img/'+ location.img" alt="img location infos">
-                    <app-loc-info [cardInfos]="location.cardInfo" ></app-loc-info>
-                </ng-template>
-            </owl-carousel-o>
-        </div>
+  <div class="alinhamento-lateral alinhamento-topo">
+    <div class="">
+      <owl-carousel-o [options]="isaOptions">
+        <ng-template *ngFor="let location of images.img" carouselSlide>
+          <app-card [location]="location"></app-card>
+        </ng-template>
+      </owl-carousel-o>
     </div>
+  </div>
 </section>

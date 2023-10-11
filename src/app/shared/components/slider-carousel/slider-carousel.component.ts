@@ -2,21 +2,19 @@ import { Component, Input } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { imagesInterface } from '../../models/images.interface';
 
-
 @Component({
   selector: 'app-slider-carousel',
   templateUrl: './slider-carousel.component.html',
-  styleUrls: ['./slider-carousel.component.scss']
+  styleUrls: ['./slider-carousel.component.scss'],
 })
 export class SliderCarouselComponent {
-  @Input() images: imagesInterface = {} as imagesInterface
+  @Input() images: imagesInterface = {} as imagesInterface;
 
   ngOnInit(): void {
-    console.log('teste', this.images.img)
+    console.log('teste', this.images.img);
   }
 
   isaOptions: OwlOptions = {
-  
     loop: true,
     mouseDrag: true,
     touchDrag: true,
@@ -35,12 +33,11 @@ export class SliderCarouselComponent {
         items: 2,
       },
       600: {
-        items: 3
+        items: 3,
       },
       940: {
-        items: 4
-      }
+        items: 4,
+      },
     },
   };
-
 }
