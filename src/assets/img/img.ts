@@ -36,5 +36,11 @@ export const images = {
         country: 'qretqrtq',
         city: 'qertqt',
         rating: '5',
+}},
+{img:'globeIcon.png', cardInfo: {    
+        attaction: 'qwertdasdqt',
+        country: 'qretqasdsartq',
+        city: 'qedasdsatqt',
+        rating: '5',
 }}
   ]}
