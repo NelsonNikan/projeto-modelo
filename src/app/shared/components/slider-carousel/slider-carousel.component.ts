@@ -9,7 +9,11 @@ import { imagesInterface } from '../../models/images.interface';
   styleUrls: ['./slider-carousel.component.scss']
 })
 export class SliderCarouselComponent {
-  @Input() images: imagesInterface = {img:[]}
+  @Input() images: imagesInterface = {} as imagesInterface
+
+  ngOnInit(): void {
+    console.log('teste', this.images.img)
+  }
 
   isaOptions: OwlOptions = {
   
@@ -19,10 +23,24 @@ export class SliderCarouselComponent {
     pullDrag: true,
     lazyLoad: true,
     dots: false,
-    margin: 100,
+    margin: 50,
     navSpeed: 700,
     navText: ['', ''],
     nav: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      260: {
+        items: 2,
+      },
+      600: {
+        items: 3
+      },
+      940: {
+        items: 4
+      }
+    },
   };
 
 }

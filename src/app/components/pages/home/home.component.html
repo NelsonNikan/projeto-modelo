@@ -1,10 +1,7 @@
-<app-button [textButton]="'Book Now'" [urlImage]="'send-icon.svg'" [urlImage]="'send-icon.svg'" (click)="showButtonActivated()"></app-button>
+<app-button
+  [textButton]="'Book Now'"
+  [urlImage]="'send-icon.svg'"
+  [urlImage]="'send-icon.svg'"
+  (click)="showButtonActivated()"
+></app-button>
 <app-slider-carousel [images]="imgs"></app-slider-carousel>
-<app-carousel
-  [attraction]="'Manguaba'"
-  [country]="'Jurubebas'"
-  [city]="'Brasil'"
-  [rating]="'0.1'"
-></app-carousel>
-<app-search-bar></app-search-bar>
-<app-icon imageUrl="star-icon.svg" text="4.5"></app-icon>

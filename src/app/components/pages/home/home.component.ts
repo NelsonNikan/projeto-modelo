@@ -8,7 +8,10 @@ import { images } from 'src/assets/img/img';
 })
 export class HomeComponent {
 
-  public imgs = images;
+  public imgs = images as any;
+  ngOnInit(): void {
+
+  }
 
   public showButtonActivated(){
   }
