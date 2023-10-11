@@ -6,14 +6,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { LocInfoComponent } from './components/loc-info/loc-info.component';
-
-
+import { IconButtonComponent } from '../icon-button/icon-button.component';
 
 @NgModule({
-  declarations: [   
+  declarations: [
     BotaoComponent,
     SliderCarouselComponent,
-    LocInfoComponent
+    LocInfoComponent,
+    IconButtonComponent,
   ],
   imports: [
     CommonModule,
@@ -21,9 +21,6 @@ import { LocInfoComponent } from './components/loc-info/loc-info.component';
     RouterModule,
     CarouselModule,
   ],
-  exports:[
-    BotaoComponent,
-    SliderCarouselComponent
-  ]
+  exports: [BotaoComponent, SliderCarouselComponent],
 })
-export class SharedModule { }
+export class SharedModule {}
