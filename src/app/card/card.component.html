@@ -1,4 +1,4 @@
-<div class="card" style="background-image: url('./img/1 (1).jpg')">
+<div class="card">
   <app-icon-button
     fileName="heart-icon.svg"
     class="upper-right-button"
@@ -7,4 +7,5 @@
     class="location-info"
     [cardInfos]="location.cardInfo"
   ></app-loc-info>
+  <img [src]="'./img/' + location.img" alt="" />
 </div>
