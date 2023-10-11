@@ -5,6 +5,11 @@ ul {
   max-width: 50rem;
 }
 
+button {
+  border-style: none;
+  background-color: white;
+}
+
 .selected {
   display: flex;
   justify-content: space-around;

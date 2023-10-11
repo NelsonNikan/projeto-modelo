@@ -1,9 +1,9 @@
 <nav>
   <ul>
     <li *ngFor="let icon of navIcons">
-      <a href="#" (click)="selectIcon(icon)"
-        ><img [src]="'./icons/' + icon" alt="{{ icon }}"
-      /></a>
+      <button (click)="selectIcon(icon)">
+        <img [src]="'./icons/' + icon" alt="{{ icon }}" />
+      </button>
       <div class="selected" *ngIf="selectedIcon === icon">
         <img src="./icons/red-dot.svg" alt="red dot" />
       </div>
