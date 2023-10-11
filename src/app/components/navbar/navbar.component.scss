@@ -1,0 +1,11 @@
+ul {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  max-width: 50rem;
+}
+
+.selected {
+  display: flex;
+  justify-content: space-around;
+}

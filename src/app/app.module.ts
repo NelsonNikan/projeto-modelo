@@ -7,12 +7,14 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { DetailsScreenComponent } from './components/pages/details-screen/details-screen.component';
 import { SharedModule } from './shared/shared.module';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     DetailsScreenComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
