@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { LocInfoComponent } from './components/loc-info/loc-info.component';
 import { IconButtonComponent } from '../icon-button/icon-button.component';
+import { CardComponent } from '../card/card.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { IconButtonComponent } from '../icon-button/icon-button.component';
     SliderCarouselComponent,
     LocInfoComponent,
     IconButtonComponent,
+    CardComponent,
   ],
   imports: [
     CommonModule,
@@ -21,6 +23,6 @@ import { IconButtonComponent } from '../icon-button/icon-button.component';
     RouterModule,
     CarouselModule,
   ],
-  exports: [BotaoComponent, SliderCarouselComponent],
+  exports: [BotaoComponent, SliderCarouselComponent, CardComponent],
 })
 export class SharedModule {}

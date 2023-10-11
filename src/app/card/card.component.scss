@@ -1,0 +1,22 @@
+.card {
+    height: 25rem;
+    width: 16.875rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 30px;
+}
+
+.upper-right-button {
+    position: absolute;
+    right: 17px;
+    top: 17px;
+}
+
+.location-info {
+    position: absolute;
+    bottom: 0;
+    left: 23px;
+    right: 23px;
+    bottom: 23px;
+}
