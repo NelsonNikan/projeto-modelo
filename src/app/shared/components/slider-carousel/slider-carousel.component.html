@@ -3,7 +3,7 @@
     <div class="">
       <owl-carousel-o [options]="isaOptions">
         <ng-template *ngFor="let location of images.img" carouselSlide>
-          <app-card [location]="location"></app-card>
+          <app-card [location]="location" [onStore]="false"></app-card>
         </ng-template>
       </owl-carousel-o>
     </div>
