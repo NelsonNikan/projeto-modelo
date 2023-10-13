@@ -8,4 +8,5 @@ import { infoInterface } from '../../models/card-info.interface';
 })
 export class LocInfoComponent {
   @Input() cardInfos: any;
+  @Input() onStore = false;
 }

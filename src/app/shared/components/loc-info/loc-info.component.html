@@ -1,16 +1,29 @@
-<div class="container">
-  <div class="location">
-    <h2>{{ cardInfos.attraction }},&nbsp;</h2>
-    <h1>{{ cardInfos.city }}</h1>
-  </div>
-  <div class="location-bottom">
+<div class="container" ngClass="onStore ? container-store">
+  <div class="inner-container-left">
+    <div class="top-line">
+      <h2 [style.font-size]="onStore ? '1.125rem' : '1rem'">
+        {{ cardInfos.attraction }}
+      </h2>
+      <h1 *ngIf="!onStore">, {{ cardInfos.city }}</h1>
+    </div>
     <div class="city-container">
-      <img src="./icons/location-pin-icon.svg" alt="location pin" />
-      <p>{{ cardInfos.city }}, {{ cardInfos.country }}</p>
-    </div>
-    <div class="review-container">
-      <img src="./icons/star-ico.svg" alt="" />
-      <p>{{ cardInfos.rating }}</p>
+      <img
+        src="./icons/location-pin-icon.svg"
+        alt="location pin"
+        [style.height]="onStore ? '1.375rem' : '1rem'"
+        [style.width]="onStore ? '1.375rem' : '1rem'"
+      />
+      <p [style.font-size]="onStore ? '1.125rem' : '0.875rem'">
+        {{ cardInfos.city }}, {{ cardInfos.country }}
+      </p>
     </div>
   </div>
+  <div class="review-container" *ngIf="!onStore">
+    <img src="./icons/star-outline-icon.svg" alt="" />
+    <p>{{ cardInfos.rating }}</p>
+  </div>
+  <section class="price-section" *ngIf="onStore">
+    <h1>Price</h1>
+    <p><span>$</span>{{ cardInfos.price }}</p>
+  </section>
 </div>
