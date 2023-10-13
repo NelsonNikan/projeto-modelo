@@ -1,9 +1,15 @@
 <div class="card">
   <app-icon-button
-    fileName="heart-icon.svg"
+    *ngIf="onStore"
+    fileName="left-arrow-icon.svg"
+    class="upper-left-button"
+  ></app-icon-button>
+  <app-icon-button
+    [fileName]="onStore ? 'tag-icon.svg' : 'heart-icon.svg'"
     class="upper-right-button"
   ></app-icon-button>
   <app-loc-info
+    [onStore]="onStore"
     class="location-info"
     [cardInfos]="location.cardInfo"
   ></app-loc-info>

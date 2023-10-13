@@ -11,4 +11,5 @@ export class CardComponent {
   };
 
   @Input() location: any;
+  @Input() onStore = false;
 }
