@@ -4,37 +4,56 @@
  */
 
 export const images = {
-    img: [
-        {
-        img:'1 (1).jpg',
-        cardInfo: {    
+  img: [
+    {
+      img: '1 (1).jpg',
+      cardInfo: {
         attraction: 'qwer',
         country: 'rty7',
         city: 'nvbn',
         rating: '1',
-}},
-   {img:'1 (2).jpg', cardInfo: {    
+        price: '100',
+      },
+    },
+    {
+      img: '1 (2).jpg',
+      cardInfo: {
         attaction: 'dfghsd',
         country: 'hgfjfgk',
         city: 'il,yikms',
         rating: '2',
-}},
-   {img:'1 (3).jpg', cardInfo: {    
+        price: '200',
+      },
+    },
+    {
+      img: '1 (3).jpg',
+      cardInfo: {
         attaction: 'asgsgh',
         country: 'sgrthj',
         city: 'gjntgukj',
         rating: '3',
-}},
-    {img:'1 (4).jpg', cardInfo: {    
+        price: '300',
+      },
+    },
+    {
+      img: '1 (4).jpg',
+      cardInfo: {
         attaction: 'fasdfadh',
         country: 'asdhah',
         city: 'asgafhf',
         rating: '4',
-}},
-     {img:'1 (5).jpg', cardInfo: {    
+        price: '400',
+      },
+    },
+    {
+      img: '1 (5).jpg',
+      cardInfo: {
         attaction: 'qwertqt',
         country: 'qretqrtq',
         city: 'qertqt',
         rating: '5',
-}}
-  ]}
+        price: '500',
+      },
+    },
+  ],
+};
