@@ -1,3 +1,84 @@
-<app-button [textButton]="'Book Now'" [urlImage]="'send-icon.svg'" (click)="showButtonActivated()"></app-button>
+<!-- <app-button [textButton]="'Book Now'" [urlImage]="'send-icon.svg'" ></app-button>
 <app-slider-carousel [images]="imgs"></app-slider-carousel>
 
+<app-input [placeholder]="'exemplo nome'" (value)="nome = $event()"></app-input>
+
+<p>{{nome}}</p>
+
+
+<mat-slide-toggle [color]="'ff0000'">Toggle me!</mat-slide-toggle> -->
+
+
+<!-- <main class="container-fluid">
+    <div class="row justify-content-center">
+        
+    </div>
+    <section>
+        <form formGroup="form">
+            <div class="row justify-content-center">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Email</mat-label>
+                    <input autofocus="true" type="email" matInput formControlName="email" placeholder="Email">
+                    <mat-error *ngIf="true">
+                        Por favor, adicione um e-mail válido
+                    </mat-error>
+                    <mat-error *ngIf="true">
+                        Email é um campo<strong> obrigatório</strong>
+                    </mat-error>
+                </mat-form-field>
+
+            </div>
+            <div class="row justify-content-center">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Senha</mat-label>
+                    <input type="password" matInput formControlName="senha" placeholder="senha">
+                    <mat-error *ngIf="true">
+                        Sua senha deve ter no minimo 8 caracteres
+                    </mat-error>
+
+                </mat-form-field>
+            </div>
+            <ng-container *ngIf="true">
+                <div class="row justify-content-center">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Nome</mat-label>
+                        <input type="text" matInput formControlName="name" placeholder="Nome">
+                        <mat-error >
+                            Seu nome deve ter no mínimo 3 caracteres
+                        </mat-error>
+
+                    </mat-form-field>
+                </div>
+            </ng-container>
+
+        </form>
+    </section>
+     <section>
+        <div class="row alinhamento-topo justify-content-center">
+            <div (click)="navegar('/redefinir-senha')">Esqueci a senha</div>
+            <div>
+                <button mat-stroked-button class="largura-botao-login" (click)="login(authProviders.Email)" [disabled]="form.invalid"> {{ configs.action }}</button>
+            </div>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+            <div>
+                <button mat-flat-button class="button-text-colo-secondary" (click)="changeAuthAction()"> {{ configs.actionChange }}</button>
+            </div>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+            <div>
+                <button mat-raised-button color="primary" (click)="login(authProviders.Facebook)"><img src="../../../assets/logos/logo-facebook.svg" width="28" alt="Logotipo do facebook no botão de login automático"> Login com Facebook</button>
+            </div>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+            <div>
+                <button mat-raised-button class="largura-botao-cadastro" (click)="login(authProviders.Google)"><img src="../../../assets/logos/google.svg" width="25" alt="Logotipo da google no botão de login automático"> Login com Gmail</button>
+            </div>
+        </div>
+    </section>
+</main> -->
+<mat-slide-toggle>Toggle me!</mat-slide-toggle>
+<i class="bi bi-9-square"></i>

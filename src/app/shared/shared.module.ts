@@ -6,6 +6,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { LocInfoComponent } from './components/loc-info/loc-info.component';
+import { InputComponent } from './components/input/input.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -13,17 +16,23 @@ import { LocInfoComponent } from './components/loc-info/loc-info.component';
   declarations: [   
     BotaoComponent,
     SliderCarouselComponent,
-    LocInfoComponent
+    LocInfoComponent,
+    InputComponent
+
   ],
   imports: [
     CommonModule,
     BrowserAnimationsModule,
     RouterModule,
     CarouselModule,
+    FormsModule,
+    ReactiveFormsModule,
+
   ],
   exports:[
     BotaoComponent,
-    SliderCarouselComponent
+    SliderCarouselComponent,
+    InputComponent
   ]
 })
 export class SharedModule { }
