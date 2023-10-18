@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatFormFieldModule} from '@angular/material/form-field'
 import { MatInputModule } from '@angular/material/input';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { MatInputModule } from '@angular/material/input';
     AppComponent,
     HomeComponent,
     DetailsScreenComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
