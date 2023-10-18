@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { LocInfoComponent } from './components/loc-info/loc-info.component';
+import { TypographyComponent } from './typography/typography/typography.component';
 import { InputComponent } from './components/input/input.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -17,6 +18,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BotaoComponent,
     SliderCarouselComponent,
     LocInfoComponent,
+    TypographyComponent,
     InputComponent
 
   ],
@@ -32,6 +34,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   exports:[
     BotaoComponent,
     SliderCarouselComponent,
+    TypographyComponent,
     InputComponent
   ]
 })

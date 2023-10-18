@@ -1,0 +1,8 @@
+<ng-container [ngSwitch]="textType">
+    <h1 *ngSwitchCase="'h1'">{{ text }}</h1>
+    <h2 *ngSwitchCase="'h2'">{{ text }}</h2>
+    <h3 *ngSwitchCase="'h3'">{{ text }}</h3>
+    <p *ngSwitchCase="'p'">{{ text }}</p>
+    <span *ngSwitchCase="'span'">{{ text }}</span>
+    <span *ngSwitchDefault>{{ text }}</span>
+</ng-container>
